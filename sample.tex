@@ -25,15 +25,15 @@ Your Scientific Article should be readable on its own. It should not exceed 4000
 If you are using this document to prepare your Scientific Article, you can add new files and input them and/or use pre-existing files and type your own text.
 
 \subsection{Document Text}
-The default font for your report is Times New Roman, 11-point size. The first line of every paragraph should be indented, with the exception of paragraphs that follow a heading or a blank line (in case of the latter, use \textbackslash noindent). All lines should be single-spaced. Default margins are 1” on all sides. In the electronic version of this template, all margins and other formatting is preset. Limit the use of abbreviations such as e.g. or viz.
+The default font for your report is Times New Roman, 11-point size. The first line of every paragraph should be indented, with the exception of paragraphs that follow a heading or a blank line (in case of the latter, use \verb+\noindent+). All lines should be single-spaced. Default margins are 1” on all sides. In the electronic version of this template, all margins and other formatting is preset. Limit the use of abbreviations such as e.g. or viz.
 
 \subsection{Headings}
 The title of your paper should be typed in bold, 18-point type, with capital and lower-case letters, and centered at the top of the page. The names of the authors and the affiliation should follow on separate lines below the title. Author names are centered, and affiliations are centered and in italic type.
 
 \begin{itemize}
-    \item Major headings (\textbackslash sections\{\}) are bold 11-point font, centered, and numbered with Roman numerals.
-    \item Subheadings (\textbackslash subsections\{\}) are bold, flush left, and numbered with capital letters.
-    \item Sub-subheadings (\textbackslash subsubsections\{\}) are italic, flush left, and numbered (1. 2. 3. etc.)
+    \item Major headings (\verb+\sections{}+) are bold 11-point font, centered, and numbered with Roman numerals.
+    \item Subheadings (\verb+\subsections{}+) are bold, flush left, and numbered with capital letters.
+    \item Sub-subheadings (\verb+\subsubsections{}+) are italic, flush left, and numbered (1. 2. 3. etc.)
 \end{itemize}
 
 \subsection{In-text References}
@@ -45,7 +45,7 @@ Choose and output style that you will use for your references and apply this sty
 \end{itemize}
 
 \subsection{Footnotes}
-Footnotes, where they appear, should be placed above the 1” margin at the bottom of the page. To insert footnotes into the template, use \textbackslash footnote\{\}. Use superscript numbers for footnotes (which is by default already the case). Use footnotes scarcely and only to provide additional information that is not essential to understand your argumentation in the main text. 
+Footnotes, where they appear, should be placed above the 1” margin at the bottom of the page. To insert footnotes into the template, use \verb+\footnote{}+. Use superscript numbers for footnotes (which is by default already the case). Use footnotes scarcely and only to provide additional information that is not essential to understand your argumentation in the main text. 
 
 \subsection{Images, Figures, and Tables}
 Captions are bold and justified, with a period and a single tab (no hyphen or other character) between the figure number and figure description.
@@ -63,7 +63,7 @@ Figure labels must be legible, approximately 8-12 point type. Only use colors fo
 \end{figure}
 
 \subsection{Equations, Numbers, Symbols, and Abbreviations}
-Equations are centered and numbered consecutively, with equation numbers in parentheses flush right, as in \ref{eqn:sample}. Insert a blank line on either side of the equation.
+Equations are centered and numbered consecutively, with equation numbers in parentheses flush right, as in \autoref{eqn:sample}. Insert a blank line on either side of the equation.
 \begin{equation}
     \label{eqn:sample}
     L = C_L \frac{1}{2}\rho V^2 S

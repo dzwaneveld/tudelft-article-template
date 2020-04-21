@@ -102,6 +102,10 @@
 \RequirePackage{lettrine}
 \setlength{\DefaultNindent}{0pt}
 
+%% Abbreviating Autoref Eq. and Fig.
+\def\figureautorefname{Fig.}
+\def\equationautorefname{Eq.}
+
 %% Customizing Captions
 \RequirePackage[tableposition=top,font=bf,labelsep=period]{caption}
 \renewcommand{\arraystretch}{1.2}
