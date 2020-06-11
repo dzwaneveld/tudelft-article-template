@@ -4,22 +4,22 @@
 %
 % Rewritten template by Daan Zwaneveld. Original template by Overleaf
 % (v1.2) available under CC BY-NC 4.0.
-% 
+%
 % This template is available under CC BY-NC 4.0. For more information,
-% see https://creativecommons.org/licenses/by-nc/4.0/. No attribution 
+% see https://creativecommons.org/licenses/by-nc/4.0/. No attribution
 % is required in articles created using this template.
 
 %% Class file is based on the default article class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{layout/tudelft-aiaa}[20/04/2020, v1.0]
+\ProvidesClass{layout/tudelft-aiaa}[11/06/2020, v1.1]
 \LoadClass[11pt]{article}
 
-%% All unknown options will be passed to the report class 
+%% All unknown options will be passed to the report class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 
 %% Required Packages
-\RequirePackage{microtype} 
+\RequirePackage{microtype}
 \RequirePackage{newtxtext,newtxmath}
 \RequirePackage[letterpaper,margin=1in]{geometry}
 \RequirePackage{setspace}
@@ -92,6 +92,19 @@
 \renewcommand{\bibfont}{\small}
 
 %%%%% Miscellaneous Customization %%%%%
+
+%% Setting up nomenclature with '=' separator (via https://tex.stackexchange.com/a/273979)
+\RequirePackage{nomencl}
+\makenomenclature % Enable the nomenclature
+\newdimen\nomwidest % Setting spacing for the '=' separator
+\renewcommand{\nomlabel}[1]{%
+  \sbox\z@{#1\hspace{\labelsep}$=$}%
+  \ifdim\nomwidest<\wd\z@\global\nomwidest\wd\z@\fi
+  #1\hfil\hspace{\labelsep}$=$%
+}
+\renewcommand{\nompostamble}{%
+  \protected@write\@auxout{}{\global\nomwidest=\the\nomwidest}%
+}
 
 %% Customizing Enumerates and Itemizes
 \RequirePackage{enumitem}

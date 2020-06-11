@@ -14,14 +14,16 @@ If you would like to switch to two columns, simply add 'twocolumn' to the global
 \documentclass[twocolumn]{layout/tudelft-aiaa}
 ```
 
-## Changelog 
+## Changelog
 
-| Version | Notable Changes | 
+| Version | Notable Changes |
 |---------|-----------------|
 | 1.0     | Initial Release |
+| 1.1     | Fixed issues with the nomenclature in `twocolumn` mode. |
+|         | Minor adjustments and fixes |
 
 The updates in-between consist of minor bug fixes.
 
-## License 
+## License
 
 This template is available under CC BY-NC 4.0. For more information, see https://creativecommons.org/licenses/by-nc/4.0/. No attribution is required in articles created using this template.

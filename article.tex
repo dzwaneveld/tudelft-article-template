@@ -1,0 +1,83 @@
+\documentclass{layout/tudelft-aiaa}
+
+%% Additional packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} % Adding images
+\usepackage{amsmath,amssymb} % Mathematics, symbols
+\usepackage{siunitx} % Various functions, e.g. \num{}
+\usepackage{tabularx} % Additional functions to tables
+\usepackage{subcaption} % Subfigures and subcaptions
+
+%% Additional commands
+\setlength{\nomitemsep}{-\parsep} % Reduce white space in nomenclature
+\setlength{\bibsep}{1pt} % Reduce white space in references
+\renewcommand{\deg}{\si{\degree}\xspace}
+
+%%%%% Title %%%%%
+
+\title{Scientific Article Template for AE2223-I}
+
+\author{List of Authors}
+\affil{Project Group Affiliation}
+
+\begin{document}
+
+\AlwaysPagewidth{
+
+\maketitle
+
+%%%%% Abstract %%%%%
+
+\begin{abstract}
+    \noindent  The abstract should appear at the beginning of your paper and it should not exceed 250 words. It should be one paragraph long and it should be comprehensible on its own, separately from the rest of the article. It should concisely indicate the background, scientific gap, research question or purpose, method, main results and conclusions dealt with in the article. Do not cite references in the abstract. The abstract is bold and indented 3 picas (1/2”) on each side by default.
+\end{abstract}
+
+}
+
+%%%%% Nomenclature %%%%%
+
+\renewcommand{\nompreamble}{\emph{Use this section to provide a list of all symbols used in the report. Provide a concise description. For example:}} %
+
+\printnomenclature[\nomwidest]
+
+\nomenclature{A}{amplitude of oscillation}
+\nomenclature{Cp}{pressure coefficient}
+\nomenclature{Cx}{force coefficient in the x direction}
+\nomenclature{Cy}{force coefficient in the y direction}
+\nomenclature{c}{chord}
+\nomenclature{dt}{time step}
+\nomenclature{Fx}{X component of the resultant pressure force acting on the vehicle}
+\nomenclature{Fy}{Y component of the resultant pressure force acting on the vehicle}
+\nomenclature{f, g}{generic functions}
+\nomenclature{h}{height}
+\nomenclature{i}{time index during navigation}
+
+%%%%% Main Body %%%%%
+
+\input{introduction}
+
+\input{methodology}
+
+\input{results-discussion}
+
+\input{conclusion}
+
+\section*{Acknowledgments}
+
+Use this section to thank anyone besides the main author(s) who has contributed to the paper. Avoid expressions such as “One of us (S.B.A.) would like to thank…” Instead, write “F. A. Author thanks…”.
+
+%%%%% Bibliography %%%%%
+
+\renewcommand{\bibpreamble}{For a full documentation of the references, please refer to the sample.bib file. You can delete this text/command safely in main.tex at line 73. \cite{example-article,example-article-published-online,example-inbook,example-inbook-series-with-editor,example-inproceedings,example-proceedings,example-report,example-paper,example-phdthesis}}
+
+\bibliography{article}
+
+%%%%% Appendix %%%%%
+
+\section*{Appendix}
+
+An appendix, if needed, should appear at the end of the article.
+
+\end{document}
