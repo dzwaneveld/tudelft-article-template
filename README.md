@@ -1,5 +1,6 @@
-# TU Delft - Unofficial Article Template (v1.0)
-A simple article template following all the guidelines of AE2223-I, based on the official AIAA template. Supports both one and two columns. This template is made specifically for AE2223-I, but it is essentially a very simple article template that looks very similar to the official AIAA template. A preview for the one and two column layout respectively can be found below.
+# TU Delft - Unofficial Article Template (v1.2)
+
+A simple article template following all the guidelines of AE2223-I, based on the official AIAA template. Supports one and two columns. This template is made specifically for AE2223-I, but it is essentially a very simple article template that looks very similar to the official AIAA template. A preview for the one and two column layout can be found below.
 
 <p align="center">
   <img align="centre"  src="https://raw.githubusercontent.com/dzwaneveld/TU-Delft-Unofficial-Article-Template/master/figures/sample.png" alt="" width="650" />
@@ -20,6 +21,8 @@ If you would like to switch to two columns, simply add 'twocolumn' to the global
 |---------|-----------------|
 | 1.0     | Initial Release |
 | 1.1     | Fixed issues with the nomenclature in `twocolumn` mode. |
+|         | Minor adjustments and fixes |
+| 1.2     | Fixed inconsistency with nomenclature |
 |         | Minor adjustments and fixes |
 
 The updates in-between consist of minor bug fixes.

@@ -11,17 +11,17 @@
 
 %% Class file is based on the default article class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{layout/tudelft-aiaa}[11/06/2020, v1.1]
-\LoadClass[11pt]{article}
+\ProvidesClass{layout/tudelft-aiaa}[07/02/2021, v1.2 TU Delft Article Class]
 
 %% All unknown options will be passed to the report class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
+\LoadClass[letterpaper,11pt]{article}
 
 %% Required Packages
 \RequirePackage{microtype}
 \RequirePackage{newtxtext,newtxmath}
-\RequirePackage[letterpaper,margin=1in]{geometry}
+\RequirePackage[margin=1in]{geometry}
 \RequirePackage{setspace}
 \RequirePackage[hyphens]{url}
 \RequirePackage{hyperref}
@@ -96,14 +96,14 @@
 %% Setting up nomenclature with '=' separator (via https://tex.stackexchange.com/a/273979)
 \RequirePackage{nomencl}
 \makenomenclature % Enable the nomenclature
-\newdimen\nomwidest % Setting spacing for the '=' separator
+\newdimen\nomequalsign % Setting spacing for the '=' separator
 \renewcommand{\nomlabel}[1]{%
   \sbox\z@{#1\hspace{\labelsep}$=$}%
-  \ifdim\nomwidest<\wd\z@\global\nomwidest\wd\z@\fi
+  \ifdim\nomequalsign<\wd\z@\global\nomequalsign\wd\z@\fi
   #1\hfil\hspace{\labelsep}$=$%
 }
 \renewcommand{\nompostamble}{%
-  \protected@write\@auxout{}{\global\nomwidest=\the\nomwidest}%
+  \protected@write\@auxout{}{\global\nomequalsign=\the\nomequalsign}%
 }
 
 %% Customizing Enumerates and Itemizes
