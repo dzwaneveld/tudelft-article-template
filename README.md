@@ -1,32 +1,17 @@
-# TU Delft - Unofficial Article Template (v1.2)
+# TU Delft - Article Template
 
-A simple article template following all the guidelines of AE2223-I, based on the official AIAA template. Supports one and two columns. This template is made specifically for AE2223-I, but it is essentially a very simple article template that looks very similar to the official AIAA template. A preview for the one and two column layout can be found below.
+This template aimed to simplify and improve the template provided in the course AE2333-I. Though it might still be useful for that course, the template is now intended to be a simple and extensive article template, based on the official AIAA template. The following three main design principles apply:
+
+- **Simplicity First:** An organised class file with an option to switch to two columns easily;
+- **Effortless:** A careful selection of common packages to get started immediately;
+- **Complete:** Ready-to-go when it comes to the structure + An extensive sample bibliography.
+
+This template is created for _pdfLaTeX_, but it is also compatible with _XeLaTeX_ or _LuaLaTeX_. _Natbib_ is used for the bibliography with as backend _BibTeX_. Please visit https://dzwaneveld.github.io/article/ for the full documentation.
 
 <p align="center">
-  <img align="centre"  src="https://raw.githubusercontent.com/dzwaneveld/TU-Delft-Unofficial-Article-Template/master/figures/sample.png" alt="" width="650" />
-
-## Usage
-
-This template is made for pdfLaTeX and uses BibTeX for the bibliography. If you would like to use it on [Overleaf](https://overleaf.com), download this project as a .zip file and create a new project > upload project.
-
-If you would like to switch to two columns, simply add 'twocolumn' to the global options, resulting in the first line in `article.tex` as can be seen below. The title and abstract remain one column, as a consequence of the `\AlwaysPagewidth{}` command.
-
-```
-\documentclass[twocolumn]{layout/tudelft-aiaa}
-```
-
-## Changelog
-
-| Version | Notable Changes |
-|---------|-----------------|
-| 1.0     | Initial Release |
-| 1.1     | Fixed issues with the nomenclature in `twocolumn` mode. |
-|         | Minor adjustments and fixes |
-| 1.2     | Fixed inconsistency with nomenclature |
-|         | Minor adjustments and fixes |
-
-The updates in-between consist of minor bug fixes.
+  <img align="centre" src="https://raw.githubusercontent.com/dzwaneveld/TU-Delft-Unofficial-Article-Template/master/figures/sample.png" alt="Preview of the Template" width="65%" />
+</p>
 
 ## License
 
-This template is available under CC BY-NC 4.0. For more information, see https://creativecommons.org/licenses/by-nc/4.0/. No attribution is required in articles created using this template.
+This [article template](https://github.com/dzwaneveld/TU-Delft-Unofficial-Article-Template) is a derivative of the [Preparation of Papers for AIAA Technical Conferences](https://overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn) by AIAA and Overleaf, used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This [article template](https://github.com/dzwaneveld/TU-Delft-Unofficial-Article-Template) by Daan Zwaneveld is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). No attribution is required in PDF outputs created using this template.

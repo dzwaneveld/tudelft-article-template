@@ -1,20 +1,15 @@
-# Ignoring all log files
+# Ignoring output and logfiles
 
+article.pdf
 *.aux
-*.log
-*.gz
+*.bbl
+*.blg
 *.fdb_latexmk
 *.fls
-*.bbl
-*.bcf
-*.blg
-*.lof
-*.lot
-*.out
-*.xml
-*.toc
-*.xdv
+*.log
 *.nlg
 *.nlo
 *.nls
-article.pdf
+*.out
+*.synctex.gz
+*.xdv
