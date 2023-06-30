@@ -1,4 +1,4 @@
-# TU Delft - Article Template
+# LaTeX × TU Delft - Article Template
 
 This template aimed to simplify and improve the template provided in the course AE2333-I. Though it might still be useful for that course, the template is now intended to be a simple and extensive article template, based on the official AIAA template. The following three main design principles apply:
 
